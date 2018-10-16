@@ -1,0 +1,337 @@
+.resume
+    margin: 0 auto
+    height: 80%
+    width: 90%
+    // display: flex
+    // flex-direction: column
+    float: left
+    position: relative
+    overflow-x: hidden
+    overflow-y: scroll
+    position: relative
+    &::-webkit-scrollbar
+        width: 0px
+        background: transparent
+        
+    .page-1
+        height: 100%
+        width: 100%
+        display: flex
+        flex-direction: column
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06)
+        h3
+            margin: 0
+            margin-top: 5%
+            height: 5%
+            line-height: 2em
+            font-size: 1.3em
+            text-transform: uppercase
+            font-weight: bold
+        .skills
+            margin: 0
+            height: 95%
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            .s-top
+                margin: 0
+                height: 35%
+                min-height: 186px
+                width: 60%
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                div
+                    height: 70%
+                    width: 30%
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    position: relative
+                    &:nth-child(2) span:nth-child(1)
+                        background-color: #2A91CD
+                    &:nth-child(3) span:nth-child(1)
+                        background-color: #2EB360
+                    span
+                        // height: 70%
+                        height: 130px
+                        // width: 30%
+                        width: 130px
+                        border-radius: 50%
+                        position: absolute
+                        top: 0
+                        &:nth-child(1)
+                            background-color: #EE6533
+                            z-index: 0
+                            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+                        &:nth-child(2)
+                            height: 94px
+                            width: 94px
+                            background-color: #ffffff
+                            z-index: 1
+                            top: 10%
+                    p
+                        position: absolute
+                        top: 20%
+                        font-size: 16px
+                        line-height: 24px
+                        z-index: 1
+                    h4
+                        margin: 0
+                        position: absolute
+                        bottom: 0
+                        text-transform: uppercase
+                        font-size: 1.2em
+            .s-middle
+                margin: auto
+                height: 30%
+                min-height: 98px
+                width: 60%
+                min-width: 590px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                // border: 1px solid red
+                align-items: center
+                p
+                    margin: 0
+                    text-align: center
+                    font-size: 16px
+                    line-height: 24px
+                    width: 100%
+                &:nth-child(2)
+                    color: #727272
+                    font-weight: lighter
+                    font-size: .8em
+                    text-align: center
+                    span
+                        font-size: 1.5em
+                        line-height: 24px
+                        font-weight: bold
+            .s-bottom
+                margin: 0
+                height: 35%
+                min-height: 146px
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .web, .adobe, .info-tech, .pro
+                    height: 80%
+                    width: 24%
+                    border-radius: 5px
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    .charts
+                        height: 65%
+                        width: 100%
+                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-around
+                        align-items: center
+                        .s-1, .s-2, .s-3
+                            height: 20%
+                            width: 80%
+                            display: flex
+                            flex-direction: row
+                            justify-content: space-between
+                            align-items: center
+                            i
+                                display: block
+                                height: 100%
+                                width: 15%
+                                border-radius: 5px
+                                background-color: #EFF1F7
+                            .bar
+                                height: 100%
+                                width: 75%
+                                background-color: #EFF1F7
+                                border-radius: 25px
+                                position: relative
+                                display: flex
+                                flex-direction: row
+                                justify-content: center
+                                align-items: center
+                                p
+                                    margin: 0
+                                    width: 100%
+                                    text-align: center
+                                    position: absolute
+                                    left: 0
+                                    z-index: 1
+                                    color: #ffffff
+                                div
+                                    margin: 0 5px
+                                    height: 80%
+                                    width: calc(73% - 5px)
+                                    background-color: #8F9CB1
+                                    position: absolute
+                                    left: 0
+                                    border-radius: 25px
+                    .s-handle
+                        height: 15%
+                        width: 50%
+                        background-color: #707070
+                        color: #ffffff
+                        display: flex
+                        align-items: center
+                        border-bottom-left-radius: 5px
+                        border-bottom-right-radius: 5px
+                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+                        h5
+                            margin: 0
+                            height: 100%
+                            width: 100%
+                            line-height: 30px
+                            text-align: center
+    .page-2
+        height: auto
+        width: 100%
+        display: flex
+        flex-direction: column
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06)
+        // border: 1px solid red
+        h3
+            margin: 0
+            height: 2%
+            line-height: 2em
+            font-size: 1.3em
+            text-transform: uppercase
+            font-weight: bold
+        .experience
+            margin: 0
+            height: 98%
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            div
+                padding: 10px 0
+                height: auto
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: left
+                color: #727272
+                line-height: 25px
+                h4
+                    margin: 0
+                    font-size: 20px
+                    font-family: "Helvetica Neue", sans-serif
+                    text-transform: uppercase
+                    opacity: .7
+                h5
+                    margin: 0
+                    font-size: 18px
+                p
+                    margin: 0
+                    width: 80%
+                    // line-height: 25px
+    .page-3
+        height: auto
+        width: 100%
+        display: flex
+        flex-direction: column
+        // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06)
+        h3
+            margin: 0
+            height: 2%
+            line-height: 2em
+            font-size: 1.3em
+            text-transform: uppercase
+            font-weight: bold
+        .education
+            margin: 0
+            height: 98%
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+            div
+                padding: 10px 0
+                height: auto
+                width: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: left
+                color: #727272
+                line-height: 25px
+                h4
+                    margin: 0
+                    font-size: 20px
+                    font-family: "Helvetica Neue", sans-serif
+                    text-transform: uppercase
+                    opacity: .7
+                    i
+                        color: #414D62
+                h5
+                    margin: 0
+                    font-size: 18px
+                p
+                    margin: 0
+                    width: 80%
+                    // line-height: 25px
+                a
+                    display: block
+                    padding: 5px 8px
+                    margin: 0
+                    height: auto
+                    width: 190px
+                    background-color: #640233
+                    color: #ffffff
+                    border-radius: 3px
+                    text-align: center
+                    p
+                        text-align: center
+                        width: 170px
+                    &:hover
+                        background-color: #1A919A
+            svg
+                margin: 0
+                height: 120px
+                width: 100px
+                position: absolute
+                bottom: 0
+                right: 0
+                .tth
+                    fill: #8F9CB1
+                    &:hover
+                        fill: #71BB6F
+    .a-slides
+            margin: 0
+            min-height: 25px
+            height: 120px
+            width: 10%
+            position: fixed
+            top: 2%
+            right: -2%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            a
+                display: block
+                margin: 0 
+                padding: 0
+                height: 30px
+                width: 30px
+                background-color: #8F9CB1
+                opacity: .2
+                border-radius: 5px
+                &:link
+                    opacity: .2
+                &:visited
+                    opacity: .8
+                &:hover
+                    opacity: .6
+                &:active
+                    opacity: .8
