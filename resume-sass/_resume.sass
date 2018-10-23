@@ -14,19 +14,30 @@
         background: transparent
         
     .page-1
+        // border: 1px solid red
+        margin: 0 auto
+        padding-bottom: 30px
         height: 100%
+        min-height: 710px
         width: 100%
+        max-width: 1200px
         display: flex
         flex-direction: column
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06)
+        overflow-x: hidden
+        position: relative
         h3
             margin: 0
             margin-top: 5%
+            // margin-left: 5%
             height: 5%
+            width: 100%
             line-height: 2em
             font-size: 1.3em
             text-transform: uppercase
             font-weight: bold
+            position: relative
+            left: 5%
         .skills
             margin: 0
             height: 95%
@@ -37,12 +48,14 @@
             .s-top
                 margin: 0
                 height: 35%
-                min-height: 186px
-                width: 60%
+                min-height: 240px
+                min-width: 45%
+                max-width: 60%
                 display: flex
                 flex-direction: row
                 justify-content: space-between
                 align-items: center
+                // border: 1px solid red
                 div
                     height: 70%
                     width: 30%
@@ -115,13 +128,16 @@
                 margin: 0
                 height: 35%
                 min-height: 146px
-                width: 100%
+                width: 90%
                 display: flex
                 justify-content: space-between
                 align-items: center
+
+
                 .web, .adobe, .info-tech, .pro
                     height: 80%
                     width: 24%
+                    min-width: 220px
                     border-radius: 5px
                     display: flex
                     flex-direction: column
@@ -191,11 +207,15 @@
                             line-height: 30px
                             text-align: center
     .page-2
+        margin: 0 auto
         height: auto
+        min-height: 710px
         width: 100%
+        max-width: 1200px
         display: flex
         flex-direction: column
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06)
+        position: relative
         // border: 1px solid red
         h3
             margin: 0
@@ -204,6 +224,8 @@
             font-size: 1.3em
             text-transform: uppercase
             font-weight: bold
+            position: relative
+            left: 5%
         .experience
             margin: 0
             height: 98%
@@ -211,6 +233,8 @@
             display: flex
             flex-direction: column
             align-items: center
+            position: relative
+            left: 5%
             div
                 padding: 10px 0
                 height: auto
@@ -235,11 +259,14 @@
                     width: 80%
                     // line-height: 25px
     .page-3
+        margin: 0 auto
         height: auto
         width: 100%
+        max-width: 1200px
         display: flex
         flex-direction: column
         // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06)
+        position: relative
         h3
             margin: 0
             height: 2%
@@ -247,6 +274,8 @@
             font-size: 1.3em
             text-transform: uppercase
             font-weight: bold
+            position: relative
+            left: 5%
         .education
             margin: 0
             height: 98%
@@ -255,6 +284,7 @@
             flex-direction: column
             align-items: center
             position: relative
+            left: 5%
             div
                 padding: 10px 0
                 height: auto
@@ -284,6 +314,7 @@
                     display: block
                     padding: 5px 8px
                     margin: 0
+                    margin-top: 12px
                     height: auto
                     width: 190px
                     background-color: #640233
@@ -301,7 +332,7 @@
                 width: 100px
                 position: absolute
                 bottom: 0
-                right: 0
+                right: 5%
                 .tth
                     fill: #8F9CB1
                     &:hover

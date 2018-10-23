@@ -13,15 +13,11 @@ html body {
 
 .wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   margin: 0 auto;
-  height: 100vh;
-  min-height: 800px;
-  max-height: 1200px;
-  width: 100%;
-  min-width: 1280px;
-  max-width: 1800px;
+  height: 75%;
+  width: 90%;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,18 +26,23 @@ html body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.16);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.16);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(5%, calc(16%));
+          transform: translate(5%, calc(16%));
 }
 
 .navigation {
   height: 100%;
-  width: 250px;
+  width: 20%;
+  min-width: 250px;
+  max-width: 300px;
   background-color: #3d3d3d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,16 +51,19 @@ html body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
+  position: relative;
+  border-radius: 5px 0 0 5px;
 }
 
 .navigation a {
+  margin: 0;
   padding: 5px 8px;
   color: #fff;
   opacity: .5;
@@ -74,9 +78,15 @@ html body {
 }
 
 .navigation a p {
+  margin: 0;
   width: 100%;
   font-size: 2.5em;
   font-weight: bold;
+}
+
+.navigation a:nth-child(1) {
+  position: relative;
+  top: -40%;
 }
 
 .navigation ul {
@@ -114,7 +124,7 @@ html body {
   position: absolute;
   width: 30px;
   height: 1.5em;
-  padding-right: 60px;
+  padding-right: 200%;
   left: 96px;
   top: 0;
   z-index: 2;
@@ -128,11 +138,13 @@ html body {
   margin-bottom: 25%;
   width: 80%;
   text-align: center;
+  position: relative;
+  bottom: -45%;
 }
 
 .flex {
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,6 +158,10 @@ html body {
   background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eff1f7));
   background: linear-gradient(#fafafa, #eff1f7);
   position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 0 5px 5px 0;
 }
 
 .content {
@@ -251,6 +267,7 @@ html body {
 }
 
 .footer ul {
+  margin: 0 auto;
   height: 70%;
   width: 50%;
   display: -webkit-box;
@@ -268,9 +285,10 @@ html body {
 }
 
 .footer ul li {
-  margin: 0;
-  width: 15%;
-  height: 80%;
+  margin: 0 auto;
+  padding: 0;
+  width: 60px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,35 +296,36 @@ html body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .footer ul li a {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
   display: block;
-  height: 70%;
-  width: 100%;
+  height: 55px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   color: #8F9CB1;
 }
 
 .footer ul li a i {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   display: block;
-  height: 99.6%;
-  width: 62%;
+  height: 55px;
+  width: 50px;
   font-size: 3em;
   border-radius: 6px;
 }
 
 .footer ul li p {
-  margin: 0;
+  margin: 0 auto;
   height: 20%;
   width: 100%;
   text-align: center;
@@ -321,8 +340,9 @@ html body {
   background: linear-gradient(#575ac4, #ca2f76, #f07935);
   background-clip: text;
   color: #ffffff;
-  height: calc(100% + 1px);
-  width: calc(80% - 10px);
+  height: 48.5px;
+  width: 48px;
+  border-radius: 10px;
 }
 
 .footer ul li:nth-child(3) a:hover {
